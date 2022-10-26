@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <form id="form" action="results.html" method="GET" enctype="multipart/form-data">
+      
+      <div id="error"></div>
+
+      <div class="username">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="User Name" required/>
+      </div>
+
+      <div class="password">
+        <label for="name">Password</label>
+        <input id="password" name="password" type="password" placeholder="Password" required/>
+      </div>
+
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="user@email.com" required> 
+      </div>
+
+      <div class="age">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder=";)" min="1" max="200" step="1">
+      </div>
+
+      <div class="phone">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone">
+      </div>
+
+      <div class="url">
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url">
+      </div>
+
+      <div class="date">
+        <label for="date">Birthday</label>
+        <input type="date" name="date" id="date" min="1940-01-01">
+      </div>
+
+        <div class="gender">
+            gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+        </div>
+
+      <div>
+        <label for="eyeColor">Eye Color</label>
+        <select name="eyeColor" id="eyeColor">
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="brown">Brown</option>
+            <option value="black">Black</option>
+        </select>
+      </div>
+
+      <div class="bio">
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio" placeholder="About you..."></textarea>
+      </div>
+
+      <div class="check-box">
+        Favorite Food
+        <div>
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="banana" id="banana">
+        </div>
+        <div>
+            <label for="apple">Apple</label>
+            <input type="checkbox" name="apple" id="apple">
+        </div>
+  </div>
+
+      <div>
+        <label for="file">File</label>
+        <input id="file" type="file" name="file">
+      </div>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
